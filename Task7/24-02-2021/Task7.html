@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Task7</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+  <h2 class="text-center text-success">Form</h2>
+  <form  class="was-validated" autocomplete="on" >
+    <div class="form-group">
+
+      <!-- Full Name: -->
+
+      <label for="fullname">Full Name:</label>
+      <input type="text" class="form-control" id="fullname" placeholder="Enter Full Name"  required>
+      <div class="valid-feedback">Valid.</div>
+      <div class="invalid-feedback">Please fill out this field.</div>
+    </div>
+
+    <!-- Email: -->
+
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" placeholder="Enter email" id="email" required>
+      <div class="valid-feedback">Valid.</div>
+      <div class="invalid-feedback">Please fill out this field.</div>
+    </div>
+    
+    <!-- Mobile Number: -->
+
+    <div class="form-group">
+      <label for="Mobile Number">Mobile Number:</label>
+      <input type="text" class="form-control" placeholder="Enter Mobile Number" id="Mnumber" required>
+      <div class="valid-feedback">Valid.</div>
+      <div class="invalid-feedback">Please fill out this field.</div>
+    </div>
+
+    <!-- Male radio -->
+
+    <div class="form-group form-check">
+      <input class="form-check-input" type="radio" name="optradio" id="male" value="male" required>
+      <label class="form-check-label" for="Male">Male</label>
+      <div class="valid-feedback">Valid.</div>
+      <div class="invalid-feedback">Check this checkbox to continue.</div>
+    </div>
+
+    <!-- Female radio -->
+
+    <div class="form-group form-check">
+      <input class="form-check-input" type="radio" name="optradio" id="female" value="female" required>
+      <label class="form-check-label" for="Female">Female</label>
+      <div class="valid-feedback">Valid.</div>
+      <div class="invalid-feedback">Check this checkbox to continue.</div>
+    </div>
+
+    <!-- Select country -->
+
+    <div class="form-group">
+      <select name="cars" class="custom-select mb-3" id="country" required>
+        <option value="">Select country</option>
+        <option value="india">India</option>
+        <option value="dubai">Dubai</option>
+        <option value="canada">Canada</option>
+      </select>
+      <div class="valid-feedback">Valid.</div>
+      <div class="invalid-feedback">Please fill out this field.</div>   
+    </div>
+
+    <!-- Password: -->
+
+    <div class="form-group">
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
+      <div class="valid-feedback">Valid.</div>
+      <div class="invalid-feedback">Please fill out this field.</div>
+    </div>
+
+    <!-- Confirm Password: -->
+
+    <div class="form-group">
+      <label for="pwd">Confirm Password:</label>
+      <input type="password" class="form-control" id="pwd1" placeholder="Enter Confirm Password" name="pswd1" required>
+      <div class="valid-feedback">Valid.</div>
+      <div class="invalid-feedback">Please fill out this field.</div>
+    </div>
+
+    <!-- Description: -->
+
+    <div class="form-group">
+      <label for="description">Description:</label>
+      <textarea class="form-control" rows="5" id="comment" required></textarea>
+      <div class="valid-feedback">Valid.</div>
+      <div class="invalid-feedback">Please fill out this field.</div>
+    </div>
+
+    <!-- Submit button -->
+
+    <button type="button" class="btn btn-primary" id="submit" >Submit</button>
+    <br>
+    <br>
+    <br>
+    <h1>My info:</h1>
+    <p>
+        your name is:<span id="outputname"></span><br>
+        your email is:<span id="outputemail"></span><br>
+        your Mobile Number is:<span id="outputmnumber"></span><br>
+        your gender is:<span id="outputmale"></span><br>
+        your country is:<span id="outputcountry"></span><br>
+        Description:<span id="outputdescription"></span>
+    </p>
+  </form>
+</div>
+<script src="Task7.js"></script>
+</body >
+</html>
