@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="zzzz011.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+</head>
+<body>
+    <div class="container p-3">
+        <h2>Registration</h2>
+        <form action="" name="registration" autocomplete="on" onsubmit="return changeText()">
+        <!-- First Name -->
+          <label for="firstname">Name:</label>
+          <input type="text" name="firstname" id="firstname" placeholder="Name" class="p-3">
+    
+        <!-- Email -->
+
+          <label for="email">Email:</label>
+          <input type="email" name="email" id="email" placeholder="john@doe.com" class="p-3">
+
+        <!-- Mobile Number -->
+            
+          <label for="mobile">Mobile Number:</label>
+          <input type="text" name="mobile" id="mobile" placeholder="0123456789" class="p-3">
+
+        <!-- Gender -->
+
+          <p class="form1">Gender:</p>
+          <div style="display:flex;flex-direction: row;justify-content:space-around;">
+            <input type="radio" name="gender" id="male" value="man" />Man
+            <input type="radio" name="gender" id="female" value="woman" />Woman
+         </div>
+
+        <!-- Country -->
+
+        <div class="form-group">
+            <select name="country" class="custom-select mb-3" id="country" class="p-3">
+              <option value="">Select country:</option>
+              <option value="india">India</option>
+              <option value="dubai">Dubai</option>
+              <option value="canada">Canada</option>
+            </select>
+          </div>
+
+          <!-- Password -->
+      
+          <label for="password">Password:</label>
+          <input type="password" name="password" id="password" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;" class="p-3">
+
+          <!-- Confirm Password -->
+
+          <label for="password">Confirm Password:</label>
+          <input type="password" name="password1" id="password1" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;" class="p-3">
+
+        <!-- Description -->
+
+          <div class="form-group">
+            <label for="description">Description:</label>
+            <textarea class="form-control" name="textarea" rows="5" id="comment" class="p-3"></textarea>
+          </div>
+
+         <!-- Submit button -->
+      
+          <button type="submit" value="Submit">Submit</button>
+
+        <!-- My info -->
+
+          <h1>My info:</h1>
+          <p>
+              your name is:<span id="outputname"></span><br>
+              your email is:<span id="outputemail"></span><br>
+              your Mobile Number is:<span id="outputmnumber"></span><br>
+              your gender is:<span id= "output1"></span><br>
+              your country is:<span id="outputcountry"></span><br>
+              Description:<span id="outputdescription"></span>
+          </p>
+        </form>
+      </div>
+    <script src="zzzz011.js"></script>
+
+</body>
+</html>
